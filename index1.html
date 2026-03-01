@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Governo - Inicio</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #containerImagem {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Oie Você Chegou, Saiba Mais Do Site</h1>
+        <img src="https://barra.sistema.gov.br/v1/assets/govbr.webp" alt="Gov Br">
+        <h2>O melhor Site que já existiu</h2>
+    </div>
+
+    <div>
+        <!-- Texto que pode ser clicado -->
+        <p onclick="alternarImagem()" style="cursor: pointer; color: blue; text-decoration: underline;">
+            Foto Do Presidente Mais Lindo E Honesto! (Clique para ver/esconder)
+        </p>
+
+        <!-- Imagem que começa escondida -->
+        <div id="containerImagem">
+            <img src="https://i.pinimg.com/736x/08/7a/6d/087a6dd037e2e5186da9ed6e94664227.jpg" alt="Imagem"
+                style="border: 2px solid green; width: 300px;">
+        </div>
+
+        <script>
+            function alternarImagem() {
+                var div = document.getElementById("containerImagem");
+
+                // Se estiver escondido (none), mostra (block). 
+                // Se estiver aparecendo, esconde (none).
+                if (div.style.display === "none" || div.style.display === "") {
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+    <div>
+        <h2>Continuação Do Site Dia 3 Hehehe</h2>
+    </div>
+</body>
+
+</html>
